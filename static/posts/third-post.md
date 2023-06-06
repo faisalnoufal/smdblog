@@ -1,10 +1,10 @@
 ---
 title: Third post
 description: Third post.
-date: '2023-4-12'
-categories:
-  - sveltekit
-  - svelte
+date: 2023-4-20
+# categories:
+#   - sveltekit
+#   - svelte
 published: true
 ---
 
