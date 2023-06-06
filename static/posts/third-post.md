@@ -1,7 +1,19 @@
 ---
-layout: blog
-title: third post
-date: 2023-06-06T22:50:17.484Z
-thumbnail: /images/uploads/education.svg
+title: Third post
+description: Third post.
+date: '2023-4-12'
+categories:
+  - sveltekit
+  - svelte
+published: true
 ---
-see now
+
+## Markdown
+
+Hey friends! 👋
+
+```ts
+function greet(name: string) {
+	console.log(`Hey ${name}! 👋`)
+}
+```
