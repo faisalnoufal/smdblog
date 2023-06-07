@@ -2,8 +2,9 @@ import { error } from '@sveltejs/kit'
 
 export async function load({ params }) {
 	try {
-		// const post = await import(`../../posts/${params.slug}.md`)
-		const post = await import(`/static/posts/${params.slug}.md`)
+		const post = await import(`../../posts/${params.slug}.md`)
+		// const post = await import(`/static/posts/${params.slug}.md`)
+		// const post = await import('../../../static/posts/${params.slug}.md')
 
 		return {
 			content: post.default,
@@ -13,3 +14,4 @@ export async function load({ params }) {
 		throw error(404, `Could not find ${params.slug}`)
 	}
 }
+
