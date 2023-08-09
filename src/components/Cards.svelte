@@ -1,21 +1,12 @@
-<script lang="ts">
-	import Cards from '../components/Cards.svelte';
-	import Hero from '../components/Hero.svelte';
-	import { formatDate } from '$lib/utils'
+<script>
+    	import { formatDate } from '$lib/utils'
 	import * as config from '$lib/config'
 
 	export let data
 </script>
 
-<svelte:head>
-	<title>{config.title}</title>
-</svelte:head>
 
-<Hero/>
-
-<!-- <Cards/> -->
-
-  <!-- News Section -->
+ <!-- News Section -->
   <section class="py-10">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -38,20 +29,3 @@
       </div>
     </div>
   </section>
-
-
-
-
-<!-- Posts -->
-<!-- <section>
-	<ul class="posts">
-		{#each data.posts as post}
-			<li class="post">
-				<a href="/"><img src={post.thumbnail} alt=""></a>
-				<a href={post.slug} class="title">{post.title}</a>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
-			</li>
-		{/each}
-	</ul>
-</section> -->
